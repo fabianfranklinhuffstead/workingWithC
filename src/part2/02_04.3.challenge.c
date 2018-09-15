@@ -5,12 +5,8 @@ int main()
 {
     int x;
     
-    x = 1;
-    while (x <= 20)
-    {
-        printf("%d\n", x);
-        x++;
-    }
+    for(x=10; x>0; x--)
+        printf("%d \n", x);
 
     return(0);
 }

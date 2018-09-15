@@ -5,11 +5,11 @@ int main()
 {
     int x;
     
-    x = 1;
-    while (x <= 20)
+    x = 10;
+    while (x > 0)
     {
         printf("%d\n", x);
-        x++;
+        x--;
     }
 
     return(0);
