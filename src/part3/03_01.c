@@ -2,8 +2,6 @@
 # include <stdio.h>
 # include <ctype.h>
 
-void repeat(int count);
-
 int main()
 {
     int ch = 'a';
