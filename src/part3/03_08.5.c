@@ -19,10 +19,9 @@ int main()
     // 2nd struct
     struct person{
         char name[32];
-        struct date birthday;
-    };
+        struct date birthday; //struct store here as birthday variable.
+    } friend; //is a short cut way to declare it in the same line as well. 
     
-    struct person friend;
 
     strcpy(friend.name, "Fredict Castro");
     friend.birthday.year = 1975;
