@@ -8,6 +8,9 @@
  * Once you change the string variable you loose 
  * its base location in memory.
  *
+ * For this code this is not the case as you can see below
+ * as we relate directly to the pointer.
+
  * */
 
 int main()
@@ -18,7 +21,6 @@ int main()
     {
         putchar(*string); // represents characters
         string++; // represent memory location
-
     }
     return(0);
 }
