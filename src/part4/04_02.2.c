@@ -13,17 +13,20 @@
  * Without *, the variable respresents a memory location.
  * WIth *, the variable represents the contents of that location.
  *
- * Check the next example to see more on this.
  * */
 int main()
 {
     int mypointer;
     int *p;
 
+    mypointer = 987;
     p = &mypointer;
     
     printf("The address of 'pointer' is %p\n", &mypointer);
-    printf("The address of 'pointer' is %p\n", mypointer;
+    printf("The contents of 'pointer' is %d\n", mypointer);
 
+    printf("The address of 'pointer' is %p\n", p);
+    printf("The contents of 'pointer' are %d\n", *p);
+ 
     return(0);
 }
