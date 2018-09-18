@@ -20,7 +20,15 @@ int main()
 
 char *encrypt(char *input)
 {
-    char output[64]; // to keep this value unchanged we set this as static
+    static char output[64]; 
+    /* To keep this value unchanged we set this as static
+     * This piece of code will not perform correctly without making this
+     * a static variable.
+     *
+     * This does not apply to single characters or pointers 
+     *  however we have to declare arrays, strings and other variables
+     * static.
+     */ 
     int x = 0;
 
     while(*input)
