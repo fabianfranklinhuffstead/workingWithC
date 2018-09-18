@@ -15,5 +15,7 @@ int main()
     total = total + sizeof(f);
     total = total + sizeof(buffer);
 
+    printf("This program set aside %ld bytes of storage. \n", total);
+
     return(0);
 }
