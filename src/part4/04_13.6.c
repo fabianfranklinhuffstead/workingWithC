@@ -19,7 +19,7 @@
 struct stats{
         int account;
         float balance;
-        struct stats *next; //a pointer to another stats struct
+        struct stats *next; //a pointer to another stats struct ***
     };
   
 void fill_structure (struct stats *s); // **
@@ -60,6 +60,18 @@ int main()
     }
     current->next = NULL; // End of list flag
 
+    // Displaying link list structure
+    current = first;
+    while(current) // This will repeat until it reaches NULL
+    // coincidentally NULL marks the end of the list
+    {
+        printf("Account %05d:\t%.2f\n",
+                current->account,
+                current->balance
+                );
+        current = current->next; // The loop advances because of this. ***
+        // This points to the next structure in the list.
+    }
     return(0);
 }
 /* Fill a structure */
